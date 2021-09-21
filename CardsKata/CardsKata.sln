@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsKata", "CardsKata.csproj", "{F9ED40CE-BB5B-4CA1-B214-67189BCEB260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsKata.Tests", "..\CardsKata.Tests\CardsKata.Tests.csproj", "{A642C64F-6D1D-4145-B163-9D627C0F2EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9ED40CE-BB5B-4CA1-B214-67189BCEB260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9ED40CE-BB5B-4CA1-B214-67189BCEB260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9ED40CE-BB5B-4CA1-B214-67189BCEB260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9ED40CE-BB5B-4CA1-B214-67189BCEB260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A642C64F-6D1D-4145-B163-9D627C0F2EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A642C64F-6D1D-4145-B163-9D627C0F2EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A642C64F-6D1D-4145-B163-9D627C0F2EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A642C64F-6D1D-4145-B163-9D627C0F2EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AD5C86F-FB93-4928-A0AF-CD52521F6DF9}
+	EndGlobalSection
+EndGlobal
