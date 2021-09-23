@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CardsKata.Result;
 
 namespace CardsKata.Gameplay
@@ -34,7 +35,7 @@ namespace CardsKata.Gameplay
              * For more details and examples, see GameTests.cs.
              */
 
-            return new Tie("No matching hands were found");
+            throw new NotImplementedException();
         }
     }
 }
