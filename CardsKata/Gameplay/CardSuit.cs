@@ -19,6 +19,10 @@ namespace CardsKata.Gameplay
 
         public char Suit { get; set; }
 
+        public static implicit operator char(CardSuit suit) => suit.Suit;
+
+        public static implicit operator CardSuit(char c) => new(c);
+
         public override string ToString()
         {
             return Suit.ToString();

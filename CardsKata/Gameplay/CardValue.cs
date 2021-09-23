@@ -19,6 +19,26 @@ namespace CardsKata.Gameplay
 
         public char Value { get; }
 
+        public int NumericValue
+        {
+            get
+            {
+                return Value switch
+                {
+                    'T' => 10,
+                    'J' => 11,
+                    'Q' => 12,
+                    'K' => 13,
+                    'A' => 14,
+                    _ => int.Parse(Value.ToString())
+                };
+            }
+        }
+
+        public static implicit operator char(CardValue value) => value.Value;
+
+        public static implicit operator CardValue(char c) => new(c);
+
         public override string ToString()
         {
             return Value.ToString();
