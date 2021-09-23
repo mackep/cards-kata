@@ -1,3 +1,5 @@
+using CardsKata.Gameplay;
+using CardsKata.Result;
 using FluentAssertions;
 using Xunit;
 
@@ -16,11 +18,12 @@ namespace CardsKata.Tests
         [InlineData(Inputs.FlushWithHighCard, Inputs.FlushWithLowCard, "Player 1 wins - Flush")]
         [InlineData(Inputs.FlushWithLowCard, Inputs.FlushWithHighCard, "Player 2 wins - Flush")]
         [InlineData(Inputs.FlushWithClubs, Inputs.FlushWithHearts, "Tie - Flush")]
-        public void Result_is_calculated_correctly(string player1, string player2, string expectedDescription)
+        public void Result_is_calculated_correctly(string playerOneHand, string playerTwoHand, string expectedDescription)
         {
             var result = new Game().Play(new []
             {
-                player1, player2
+                new PlayerWithCards(new Player("Player 1"), playerOneHand.AsCards()),
+                new PlayerWithCards(new Player("Player 2"), playerTwoHand.AsCards())
             });
 
             result.As<IResult>().GetDescription().Should().Be(expectedDescription);

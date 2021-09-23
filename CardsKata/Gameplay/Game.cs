@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CardsKata.Result;
 
-namespace CardsKata
+namespace CardsKata.Gameplay
 {
     public class Game
     {
         /// <summary>
-        ///     Calculate which one of the provided inputs has the best poker hand according to the provided rules.
+        ///     Calculate the player that has the best card hand according to the provided rules.
         /// </summary>
-        /// <param name="inputs">A collection strings containing the cards for each player, e.g. "2H 3D 5S 9C KD", "2S 8S AS QS 3S"</param>
+        /// <param name="players">A collection of players with dealt cards</param>
         /// <returns>Result indicating either a winner or a tie</returns>
-        public IResult Play(IReadOnlyList<string> inputs)
+        public IResult Play(IReadOnlyCollection<PlayerWithCards> players)
         {
             /*
              * A poker deck contains 52 cards - each card has a suit which is one of clubs, diamonds, hearts, or spades (denoted C, D, H, and S in the input data).
@@ -34,7 +34,7 @@ namespace CardsKata
              * For more details and examples, see GameTests.cs.
              */
 
-            throw new NotImplementedException();
+            return new Tie("No matching hands were found");
         }
     }
 }

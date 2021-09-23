@@ -1,4 +1,6 @@
-﻿namespace CardsKata.InputOutput
+﻿using CardsKata.Result;
+
+namespace CardsKata.Output
 {
     public interface IOutput
     {

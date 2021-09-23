@@ -1,4 +1,4 @@
-﻿namespace CardsKata
+﻿namespace CardsKata.Result
 {
     public interface IResult
     {

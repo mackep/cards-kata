@@ -1,4 +1,5 @@
-﻿using CardsKata.InputOutput;
+﻿using CardsKata.Gameplay;
+using CardsKata.Output;
 
 namespace CardsKata
 {
@@ -6,13 +7,22 @@ namespace CardsKata
     {
         private static void Main()
         {
-            var io = new ConsoleInputOutput();
+            var output = new ConsoleOutput();
 
-            var cards = io.GetCardsFor(2);
+            var players = new[]
+            {
+                new Player("Blondie"),
+                new Player("Ugly Tuco"),
+                new Player("Angel Eyes")
+            };
 
-            var result = new Game().Play(cards);
+            var cardsPerPlayer = new Dealer().DealCardsFor(players);
 
-            io.Report(result);
+            output.Report(cardsPerPlayer);
+
+            var result = new Game().Play(cardsPerPlayer);
+
+            output.Report(result);
         }
     }
 }
