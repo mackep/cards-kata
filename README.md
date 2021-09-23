@@ -15,7 +15,7 @@ Three of the cards in the hand have the same value. Hands which both contain thr
 Hand contains 5 cards of the same suit. Hands which are both flushes are ranked using the rules for High Card.
 
 ### Goal
-The goal of this task is to rank poker hands and to indicate which, if any, has a higher rank than the others. A good place to start your implementation is `Game.cs`. Use the provided unit tests in `GameTests.cs` to check that your implementation works accordingly.
+The goal of this task is to rank poker hands and to indicate which, if any, has a higher rank than the others. A good place to start your implementation is `Game.cs`. Run the unit tests in `GameTests.cs` to check that your implementation works accordingly.
 
 ## Development
 
