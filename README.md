@@ -15,18 +15,30 @@ Three of the cards in the hand have the same value. Hands which both contain thr
 Hand contains 5 cards of the same suit. Hands which are both flushes are ranked using the rules for High Card.
 
 ### Goal
-The goal of this task is to rank poker hands and to indicate which, if any, has a higher rank than the others. Note that it is possible to receive tie as result if the two best hands have the same rank. For more details and examples, see and run the tests in GameTests.cs.
+The goal of this task is to rank poker hands and to indicate which, if any, has a higher rank than the others. A good place to start your implementation is `Game.cs`. Use the provided unit tests in `GameTests.cs` to check that your implementation works accordingly.
 
-## Prerequisites
+## Development
+
+### Prerequisites
 
 Requires .NET 5 to be installed: https://dotnet.microsoft.com/download/dotnet/5.0.
 
-## Running the tests
+### Running the application
 
-### Within an IDE
+#### Within an IDE
+
+In an IDE such as Visual Studio, simply build the solution and run the application in for example debug mode using F5.
+
+#### Command line
+
+Run `dotnet run` in the root folder.
+
+### Running the tests
+
+#### Within an IDE
 
 In an IDE such as Visual Studio, simply build the solution and run all tests using the built-in test runner.
 
-### Command line
+#### Command line
 
-Run `dotnet test` in the repository root folder.
+Run `dotnet test` in the root folder.
