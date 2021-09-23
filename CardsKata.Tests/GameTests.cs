@@ -18,7 +18,7 @@ namespace CardsKata.Tests
         [InlineData(Inputs.FlushWithHighCard, Inputs.FlushWithLowCard, "Player 1 wins - Flush")]
         [InlineData(Inputs.FlushWithLowCard, Inputs.FlushWithHighCard, "Player 2 wins - Flush")]
         [InlineData(Inputs.FlushWithClubs, Inputs.FlushWithHearts, "Tie - Flush")]
-        public void Result_is_calculated_correctly(string playerOneHand, string playerTwoHand, string expectedDescription)
+        public void Result_is_calculated_correctly(string playerOneHand, string playerTwoHand, string expectedResult)
         {
             var result = new Game().Play(new []
             {
@@ -26,7 +26,7 @@ namespace CardsKata.Tests
                 new PlayerWithCards(new Player("Player 2"), playerTwoHand.AsCards())
             });
 
-            result.As<IResult>().GetDescription().Should().Be(expectedDescription);
+            result.GetDescription().Should().Be(expectedResult);
         }
     }
 }
